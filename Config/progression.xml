@@ -1,0 +1,123 @@
+<ttr>
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingKnuckles']">
+		<effect_group>
+			<requirement name="ItemHasTags" tags="knuckleSkill"/>
+			<passive_effect name="EntityDamage" operation="perc_add" level="15,75" value=".01,.35"/>
+			<passive_effect name="StaminaLoss" operation="perc_add" level="15,75" value="-.01,-.15"/>
+			<passive_effect name="StaminaLoss" operation="perc_add" level="15,75" value="-.01,-.15" tags="secondary"/>
+		</effect_group>
+</append>
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']">
+		<effect_group>
+			<requirement name="ItemHasTags" tags="bladeSkill"/>
+			<passive_effect name="EntityDamage" operation="perc_add" level="15,100" value=".01,.35"/>
+			<passive_effect name="StaminaLoss" operation="perc_add" level="15,100" value="-.01,-.15"/>
+			<passive_effect name="StaminaLoss" operation="perc_add" level="15,100" value="-.01,-.15" tags="secondary"/>
+		</effect_group>
+</append>
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingClubs']">
+		<effect_group>
+			<requirement name="ItemHasTags" tags="clubSkill"/>
+			<passive_effect name="EntityDamage" operation="perc_add" level="15,75" value=".01,.35"/>
+			<passive_effect name="StaminaLoss" operation="perc_add" level="15,75" value="-.01,-.15"/>
+			<passive_effect name="StaminaLoss" operation="perc_add" level="15,75" value="-.01,-.15" tags="secondary"/>
+		</effect_group>
+</append>
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSledgehammers']">
+		<effect_group>
+			<requirement name="ItemHasTags" tags="sledgeSkill"/>
+			<passive_effect name="EntityDamage" operation="perc_add" level="15,75" value=".01,.35"/>
+			<passive_effect name="StaminaLoss" operation="perc_add" level="15,75" value="-.01,-.15"/>
+			<passive_effect name="StaminaLoss" operation="perc_add" level="15,75" value="-.01,-.15" tags="secondary"/>
+		</effect_group>
+</append>
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBows']">
+		<effect_group>
+			<requirement name="ItemHasTags" tags="bowSkill"/>
+			<passive_effect name="EntityDamage" operation="perc_add" level="15,100" value=".01,.35"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="15,100" value="0.01,0.15"/>
+		</effect_group>
+</append>
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingSpears']">
+		<effect_group>
+			<requirement name="ItemHasTags" tags="spearSkill"/>
+			<passive_effect name="EntityDamage" operation="perc_add" level="15,75" value=".01,.35"/>
+			<passive_effect name="StaminaLoss" operation="perc_add" level="15,75" value="-.01,-.15"/>
+			<passive_effect name="StaminaLoss" operation="perc_add" level="15,75" value="-.01,-.15" tags="secondary"/>
+		</effect_group>
+</append>
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingHandguns']">
+		<effect_group>
+			<requirement name="ItemHasTags" tags="handgunSkill"/>
+			<passive_effect name="EntityDamage" operation="perc_add" level="15,100" value=".01,0.35"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="15,100" value="0.01,0.15"/>
+		</effect_group>
+</append>
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingShotguns']">
+		<effect_group>
+			<requirement name="ItemHasTags" tags="shotgunSkill"/>
+			<passive_effect name="EntityDamage" operation="perc_add" level="15,100" value=".01,.35"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="15,100" value="0.01,0.15"/>
+		</effect_group>
+</append>
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRifles']">
+		<effect_group>
+			<requirement name="ItemHasTags" tags="rifleSkill"/>
+			<passive_effect name="EntityDamage" operation="perc_add" level="15,100" value=".01,.35"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="15,100" value="0.01,0.15"/>
+		</effect_group>
+</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMachineGuns']">
+		<effect_group>
+			<requirement name="ItemHasTags" tags="machinegunSkill"/>
+			<passive_effect name="EntityDamage" operation="perc_add" level="15,100" value=".01,.35"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="15,100" value="0.01,0.15"/>
+		</effect_group>
+</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']">
+		<effect_group>
+			<requirement name="ItemHasTags" tags="armor"/>	
+			<passive_effect name="PhysicalDamageResist" operation="perc_add" level="15,75" value=".01,.25"/>
+		</effect_group>
+</append>
+<!-- Note: max is 100 in those 
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingTraps']">
+</append>
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']">
+</append>
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']">
+</append>
+-->
+
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']">
+	<effect_group>
+		<requirements compare_type="and" >
+			<requirement name="TimeOfDay"/>
+			<requirement name="IsIndoors"/>
+		</requirements>
+		<passive_effect name="HealthChangeOT" operation="base_add" level="50,75" value=".01,.15"/>
+	</effect_group>
+</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRobotics']">
+		<effect_group>
+		<!-- perkElectrocutioner is batons only, perkRobotics will apply also to sledge/junkie turret -->
+			<requirement name="ItemHasTags" tags="perkElectrocutioner"/>
+			<passive_effect name="EntityDamage" operation="perc_add" level="15,100" value=".01,.35"/>
+			<passive_effect name="StaminaLoss" operation="perc_add" level="15,100" value="-.01,-.15"/>
+			<passive_effect name="StaminaLoss" operation="perc_add" level="15,100" value="-.01,-.15" tags="secondary"/>
+		</effect_group>
+</append>
+
+</ttr>
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<Name value="ttr_useless_skills" />
+	<DisplayName value="ttr's (not so) useless skills books" />
+	<Description value="Skills books have additionall bufs, and are not only for crafting things" />
+	<Author value="ttr" />
+	<Version value="A21" />
+	<Website value="" />
+	<Version value="1.0.0" />
+</xml>
